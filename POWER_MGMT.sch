@@ -195,9 +195,7 @@ Wire Wire Line
 Wire Wire Line
 	7900 2500 7800 2500
 Wire Wire Line
-	6700 2400 6600 2400
-Wire Wire Line
-	6600 2400 6600 2500
+	6700 2400 6650 2400
 Wire Wire Line
 	6600 2500 6700 2500
 Wire Wire Line
@@ -206,7 +204,6 @@ Wire Wire Line
 	7900 2950 7900 2500
 Wire Wire Line
 	6600 2500 6600 2950
-Connection ~ 6600 2500
 Connection ~ 7900 2500
 Wire Wire Line
 	7250 2850 7250 2950
@@ -504,9 +501,7 @@ Wire Wire Line
 Wire Wire Line
 	7850 5000 7750 5000
 Wire Wire Line
-	6650 4900 6550 4900
-Wire Wire Line
-	6550 4900 6550 5000
+	6650 4900 6600 4900
 Wire Wire Line
 	6550 5000 6650 5000
 Wire Wire Line
@@ -515,7 +510,6 @@ Wire Wire Line
 	7850 5450 7850 5000
 Wire Wire Line
 	6550 5000 6550 5450
-Connection ~ 6550 5000
 Connection ~ 7850 5000
 Wire Wire Line
 	7200 5350 7200 5450
@@ -848,9 +842,7 @@ Wire Wire Line
 Wire Wire Line
 	3100 6800 3000 6800
 Wire Wire Line
-	1900 6700 1800 6700
-Wire Wire Line
-	1800 6700 1800 6800
+	1900 6700 1850 6700
 Wire Wire Line
 	1800 6800 1900 6800
 Wire Wire Line
@@ -859,7 +851,6 @@ Wire Wire Line
 	3100 7250 3100 6800
 Wire Wire Line
 	1800 6800 1800 7250
-Connection ~ 1800 6800
 Connection ~ 3100 6800
 Wire Wire Line
 	2450 7150 2450 7250
@@ -1842,4 +1833,13 @@ F 3 "" H 4600 2250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4600 1800 4600 2100
+Wire Wire Line
+	1850 6700 1850 6300
+Connection ~ 1850 6300
+Wire Wire Line
+	6600 4900 6600 4500
+Connection ~ 6600 4500
+Wire Wire Line
+	6650 2400 6650 2000
+Connection ~ 6650 2000
 $EndSCHEMATC
