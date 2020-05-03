@@ -24,29 +24,6 @@ Wire Wire Line
 Wire Wire Line
 	6000 3150 4600 3150
 $Comp
-L ic_mcu:ATSAMD11D U?
-U 1 1 5EA67A68
-P 6700 2800
-AR Path="/5EA74D44/5EA67A68" Ref="U?"  Part="1" 
-AR Path="/5EA10A9F/5EA67A68" Ref="U2"  Part="1" 
-F 0 "U2" H 6250 3500 50  0000 C CNN
-F 1 "ATSAMD11D" H 6450 3400 50  0000 C CNN
-F 2 "package_sop:SOIC-20" H 6100 2550 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42363-SAM-D11_Datasheet.pdf" H 6100 2550 50  0001 C CNN
-F 4 "Microchip" H 5600 3750 50  0001 C CNN "MFG1"
-F 5 "ATSAMD11D14A-SSUT" H 5600 3650 50  0001 C CNN "MFG1 P/N"
-F 6 "DigiKey" H 5600 3550 50  0001 C CNN "VENDOR1"
-F 7 "ATSAMD11D14A-SSUTCT-ND" H 5650 3450 50  0001 C CNN "VENDOR1 P/N"
-F 8 "ATSAMD11D14A-SSUT" H 6700 2800 50  0001 C CNN "Field4"
-	1    6700 2800
-	1    0    0    -1  
-$EndComp
-NoConn ~ 7350 2650
-NoConn ~ 7350 2750
-NoConn ~ 7350 2850
-NoConn ~ 7350 2950
-NoConn ~ 7350 3050
-$Comp
 L power:GND #PWR?
 U 1 1 5EA67A78
 P 6700 4000
@@ -80,17 +57,12 @@ Wire Wire Line
 	2150 5800 2150 5600
 Wire Wire Line
 	6700 1800 6700 1950
-NoConn ~ 6000 2550
-NoConn ~ 6000 2650
-NoConn ~ 6000 2450
 Wire Wire Line
 	6000 2350 5800 2350
 Wire Wire Line
 	5800 2350 5800 1250
 Wire Wire Line
 	5800 1250 8800 1250
-NoConn ~ 6000 3300
-NoConn ~ 6000 3400
 Wire Wire Line
 	6000 2950 4600 2950
 Wire Wire Line
@@ -343,4 +315,34 @@ F 10 "" H 1800 6200 50  0001 C CNN "VENDOR1 P/N"
 	1    2150 5950
 	0    1    1    0   
 $EndComp
+Text Notes 7250 3800 0    50   ~ 0
+USART will be used for MIDI\nConfigure using PORT config\nTxD (MIDI) set to output\nXCK not needed, though can be outputted\n\nSet TX to SERCOM0 PAD[0] (pin 6)
+$Comp
+L ic_mcu:ATSAMD11D U?
+U 1 1 5EA67A68
+P 6700 2800
+AR Path="/5EA74D44/5EA67A68" Ref="U?"  Part="1" 
+AR Path="/5EA10A9F/5EA67A68" Ref="U2"  Part="1" 
+F 0 "U2" H 6250 3500 50  0000 C CNN
+F 1 "ATSAMD11D" H 6450 3400 50  0000 C CNN
+F 2 "package_sop:SOIC-20" H 6100 2550 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42363-SAM-D11_Datasheet.pdf" H 6100 2550 50  0001 C CNN
+F 4 "Microchip" H 5600 3750 50  0001 C CNN "MFG1"
+F 5 "ATSAMD11D14A-SSUT" H 5600 3650 50  0001 C CNN "MFG1 P/N"
+F 6 "DigiKey" H 5600 3550 50  0001 C CNN "VENDOR1"
+F 7 "ATSAMD11D14A-SSUTCT-ND" H 5650 3450 50  0001 C CNN "VENDOR1 P/N"
+F 8 "ATSAMD11D14A-SSUT" H 6700 2800 50  0001 C CNN "Field4"
+	1    6700 2800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7350 3050
+NoConn ~ 7350 2950
+NoConn ~ 7350 2850
+NoConn ~ 7350 2750
+NoConn ~ 7350 2650
+NoConn ~ 6000 3300
+NoConn ~ 6000 3400
+NoConn ~ 6000 2650
+NoConn ~ 6000 2550
+NoConn ~ 6000 2450
 $EndSCHEMATC

@@ -21,7 +21,7 @@ Text HLabel 8350 1800 2    50   Output ~ 0
 I2S[0..3]
 Text HLabel 8350 1500 2    50   Output ~ 0
 I2C[0..1]
-Text HLabel 4900 2450 0    50   Input ~ 0
+Text HLabel 1100 2450 0    50   Input ~ 0
 SPI[0..3]
 Text HLabel 5550 5250 0    50   Output ~ 0
 MIDI_SEL
@@ -244,12 +244,12 @@ Connection ~ 4600 5050
 Wire Wire Line
 	4600 5050 3750 5050
 Entry Wire Line
-	6700 2450 6600 2550
+	1350 2450 1250 2550
 Entry Wire Line
 	6600 2450 6500 2550
 Entry Wire Line
 	6500 2450 6400 2550
-Text Label 7400 4350 2    50   ~ 0
+Text Label 2300 4550 0    50   ~ 0
 SPI0
 Text Label 5550 4350 0    50   ~ 0
 SPI2
@@ -259,8 +259,6 @@ Text Label 5550 4250 0    50   ~ 0
 SPI3
 Entry Wire Line
 	6400 2450 6300 2550
-Wire Wire Line
-	6600 2550 6600 3150
 Wire Wire Line
 	6300 2550 6300 3150
 Entry Wire Line
@@ -740,25 +738,6 @@ F 5 "N/A" H 2500 4950 50  0001 C CNN "MFG P/N"
 F 6 "N/A" H 2200 4950 50  0001 C CNN "VENDOR1"
 F 7 "N/A" H 2500 5050 50  0001 C CNN "VENDOR1 P/N"
 	1    2300 4450
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2300 4550 2550 4550
-$Comp
-L test_point:TP_SMALL TP?
-U 1 1 5EAAA5B2
-P 2300 4550
-AR Path="/5EAAA5B2" Ref="TP?"  Part="1" 
-AR Path="/5EA10DD7/5EAAA5B2" Ref="GPIO0_16"  Part="1" 
-F 0 "GPIO0_16" V 2300 4700 50  0000 L CNN
-F 1 "TP_SMALL" H 2500 4700 50  0001 C CNN
-F 2 "test_point:TP_1mm" H 2150 4700 50  0001 C CNN
-F 3 "" H 2150 4700 50  0001 C CNN
-F 4 "N/A" H 2200 5150 50  0001 C CNN "MFG"
-F 5 "N/A" H 2500 5050 50  0001 C CNN "MFG P/N"
-F 6 "N/A" H 2200 5050 50  0001 C CNN "VENDOR1"
-F 7 "N/A" H 2500 5150 50  0001 C CNN "VENDOR1 P/N"
-	1    2300 4550
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -1472,8 +1451,6 @@ Wire Wire Line
 Wire Wire Line
 	5550 5250 5850 5250
 Wire Wire Line
-	7900 3150 7900 4350
-Wire Wire Line
 	7800 3250 7800 4250
 Wire Wire Line
 	6500 2550 6500 3250
@@ -1493,10 +1470,6 @@ Wire Wire Line
 	5050 4250 5850 4250
 Wire Wire Line
 	7050 4250 7800 4250
-Wire Wire Line
-	7050 4350 7900 4350
-Wire Wire Line
-	6600 3150 7900 3150
 Wire Wire Line
 	6500 3250 7800 3250
 Wire Wire Line
@@ -1546,11 +1519,11 @@ F 7 "N/A" H 7500 5050 50  0001 C CNN "VENDOR1 P/N"
 $EndComp
 Wire Wire Line
 	7300 4450 7050 4450
-Text Notes 3000 2750 0    50   ~ 0
+Text Notes 3700 3250 0    50   ~ 0
 I2S0 = MCLK\nI2S1 = BCK\nI2S2 = DATA\nI2S3 = LRCK
-Text Notes 3000 2950 0    50   ~ 0
+Text Notes 3700 3450 0    50   ~ 0
 I2C0 = SCL\nI2C1 = SDA
-Text Notes 6750 3000 0    50   ~ 0
+Text Notes 2950 2900 0    50   ~ 0
 SPI0 = CLK\nSPI1 = MOSI\nSPI2 = MISO\nSPI3 = CS
 Text Label 5600 2450 0    50   ~ 0
 SPI[0..3]
@@ -1558,10 +1531,33 @@ Text Label 6000 1800 0    50   ~ 0
 I2S[0..3]
 Text Label 6000 1500 0    50   ~ 0
 I2C[0..1]
+$Comp
+L test_point:TP_SMALL TP?
+U 1 1 5EC029C4
+P 7300 4350
+AR Path="/5EC029C4" Ref="TP?"  Part="1" 
+AR Path="/5EA10DD7/5EC029C4" Ref="GPIO1_13"  Part="1" 
+F 0 "GPIO1_13" V 7300 4500 50  0000 L CNN
+F 1 "TP_SMALL" H 7500 4500 50  0001 C CNN
+F 2 "test_point:TP_1mm" H 7150 4500 50  0001 C CNN
+F 3 "" H 7150 4500 50  0001 C CNN
+F 4 "N/A" H 7200 4950 50  0001 C CNN "MFG"
+F 5 "N/A" H 7500 4850 50  0001 C CNN "MFG P/N"
+F 6 "N/A" H 7200 4850 50  0001 C CNN "VENDOR1"
+F 7 "N/A" H 7500 4950 50  0001 C CNN "VENDOR1 P/N"
+	1    7300 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7050 4350 7300 4350
+Wire Wire Line
+	1250 4550 1250 2550
+Wire Wire Line
+	1250 4550 2550 4550
 Wire Bus Line
 	4250 1500 8350 1500
 Wire Bus Line
-	5650 1800 5650 2150
+	1100 2450 6600 2450
 Wire Bus Line
-	4900 2450 6700 2450
+	5650 1800 5650 2150
 $EndSCHEMATC
