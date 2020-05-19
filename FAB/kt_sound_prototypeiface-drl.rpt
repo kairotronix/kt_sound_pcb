@@ -1,0 +1,32 @@
+Drill report for D:\DEV\kt_sound\pcb\kt_sound_pcb\kt_sound_prototypeiface.kicad_pcb
+Created on 05/05/20 14:24:46
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'kt_sound_prototypeiface-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.40mm  0.016"  (169 holes)
+    T2  0.70mm  0.028"  (10 holes)
+    T3  1.00mm  0.039"  (10 holes)
+    T4  1.02mm  0.040"  (80 holes)
+    T5  1.20mm  0.047"  (6 holes)
+    T6  1.30mm  0.051"  (14 holes)
+    T7  1.60mm  0.063"  (3 holes)
+    T8  2.00mm  0.079"  (4 holes)
+    T9  3.00mm  0.118"  (3 holes)
+
+    Total plated holes count 299
+
+
+Drill file 'kt_sound_prototypeiface-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+    T1  1.70mm  0.067"  (2 holes)
+    T2  2.40mm  0.094"  (4 holes)
+
+    Total unplated holes count 6
